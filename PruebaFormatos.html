@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<html>
+		<header>
+			<title> Different formts </title>
+			<style type="text/css">
+				li{
+					color:green;
+				}
+				ol{
+					color:red;
+					font-size: 22px;
+				}
+				a{
+					font-weight: bold;
+					font-size: 28px;
+				}
+				a::before{
+					content: "\21d2 click here to navigate to ";
+
+				}
+				input[type=text]{
+					background-color: orange;
+					color: black;
+				}
+				input[type=datalist]{
+					font-weight: bold;
+					background-color: rgba(57,174,151,10);
+					color:white;
+				}
+				form{
+					color:purple;
+				}
+				::placeholder{
+					color:pink;	
+				}
+				button{
+					background-color: rgb(209,146,231);
+					border: none;
+					color:purple;
+					padding: 15px 32px;
+					text-align: center;
+					display: inline-block;
+					font-size: 15px;
+					border-radius: 8px;
+				}
+				button:hover {
+					background-color: green;
+					color:white;
+				}
+				p{
+					height: 150px;
+				}
+			</style>
+		</header>
+
+		<body>
+			<section>
+				<ul>
+					<li><a href="#sec1">First section</a></li>
+					<li><a href="#lis1">Ordered List</a></li>
+					<li><a href="#form1">First Form</a></li>
+				</ul>
+			</section>
+			<p>  </p>
+			<h1 id="sec1">100 years ago today, George Mueller, “the father of the space shuttle”, was born. The electrical engineer was the NASA administrator who headed the Office of Manned Space Flight and ensured the success of the Apollo program that landed a man on the Moon and returned him safely to the Earth in 1969. NASA's “most brilliant and fearless manager”, Mueller also played a key part in the design of Skylab, and championed the space shuttle's development... (1918)</h1>
+			<div>
+				<p>  </p>
+				<ol id="lis1">
+					<li>Immigrant Endures Misery in Search of American Dream, But Stays Positive Until a Brilliant Idea Unlocks it
+					</li>
+					<li>Veteran-Run Business is Left Destitute When Equipment is Stolen, But People Spend $15K to Replace It</li>
+					<li>Jul 15, 2018 Inspiring Girl’s Postcard to a Veteran Boasts the Simple Wisdom of Children
+					</li>
+					<li>the Heartwarming Moment Two Sisters With Alzheimer’s Reunite After 15 Years</li>
+				</ol>
+			</div>
+			<p>   </p>
+			<div id="form1">
+				<form >
+					NAME:<input type="text" name="name" placeholder="enter your name">
+					AGE:<input type="number" name="age" placeholder="enter your age">
+					PASSWORD:<input type="PASSWORD" name="password" placeholder="enter your password">
+					<div>
+						GENDER:
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+					</div>
+					<div>
+						<input type="datalist" name="prices" list="price" placeholder="prices">
+						<datalist id="price">
+							<option value="<10€">
+							<option value="<20€">
+							<option value="<50€">
+							<option value=">100€">	
+						</datalist>
+					</div>
+					<div>
+						<button>Click Here</button>
+					</div>
+				</form>
+			</div>
+
+		</body>
+
+	</html>
